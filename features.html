@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="ChatGPT_Image_Sep_4__2026__12_35_37_PM-removebg-preview.png" alt="Logo" width="450" height="200"
+            class="Logo">
+        <ul class="topNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="text-exp">
+           <h3 class="weight-Text"><span class="text-secondary">SmartHome Dashboard</span><br>Monitor Your Home <br>in <span class="span-green">Real Time</span><br><span class="text-secondary2">Kelola perangkat,pantau penggunaan daya,<br>
+            dan jaga kenyamanan rumah anda</span></h3>
+        </div>
+
+    <div class="container-metric">
+        <div class="card-metric">
+            <div class="subcard-metric">
+                <div class="card-icon" style="background: rgba(0, 255, 200, 0.1); color: #00ffc8;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                        <rect x="9" y="9" width="6" height="6"></rect>
+                        <line x1="9" y1="1" x2="9" y2="4"></line>
+                        <line x1="15" y1="1" x2="15" y2="4"></line>
+                        <line x1="9" y1="20" x2="9" y2="23"></line>
+                        <line x1="15" y1="20" x2="15" y2="23"></line>
+                        <line x1="20" y1="9" x2="23" y2="9"></line>
+                        <line x1="20" y1="15" x2="23" y2="15"></line>
+                        <line x1="1" y1="9" x2="4" y2="9"></line>
+                        <line x1="1" y1="15" x2="4" y2="15"></line>
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <h4>Total Perangkat</h4>
+                    <p> Aktif</p>
+                </div>
+            </div>
+
+            <div class="subcard-metric">
+                <div class="card-icon" style="background: rgba(0, 255, 200, 0.1); color: #00ffc8;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <h4>Daya Terpakai</h4>
+                    <p>420 Watt</p>
+                </div>
+            </div>
+
+            <div class="subcard-metric">
+                <div class="card-icon" style="background: rgba(0, 255, 200, 0.1); color: #00ffc8;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <h4>Suhu Rata-rata</h4>
+                    <p>25°C</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-flex">
+
+    <div class="container-denah">
+    <h3 class="homeLayout">🏠 Home Layout</h3>
+
+    <div class="room1 room"> 
+        <a href="livingRoom.html"><button class="btn-livingRoom">🛋️ Living Room ></button></a>
+    </div>`
+
+    <div class="room2 room">
+        <a href="bedRoom1.html"><button class="btn-livingRoom">🛏️ Bed Room</button></a>
+    </div>
+
+    <img src="main-bg.png" alt="Home" class="denah" width="600px">
+    </div>
+
+    <div class="average-container">
+            <canvas id="average"></canvas>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
