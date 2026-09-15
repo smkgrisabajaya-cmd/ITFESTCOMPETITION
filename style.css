@@ -54,7 +54,7 @@ a:hover{
 
 .title{
     width: 800px;
-    font-size:75px;
+    font-size:68px;
 }
 
 .description{
@@ -65,100 +65,265 @@ a:hover{
 
 .btnGet{
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     left: 5px;
-    width: 130px;
-    height: 70px;
+    width: 160px;
+    height: 55px;
     border-radius:30px;
-    background-color: #A8E6CF;
+    background-color:#80e7c1;
     border: none;
+    font-size: 15px;
     color: black;
-    font-weight: bold;
     transition: 0.3s;
 }
 
-.btnGet:hover{
-    transform:scale(1.1)
-}
-
-.mainCard{
- display: flex;
- gap: 70px;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- min-height: 100vh;
-}
-
-.cardOffer{
-    display: flex;
-    gap: 80px;
-    margin-left: 20px;
-    color: aliceblue;
-}
-
-.titleGet{
-    color: aliceblue;
-}
-
-.backIndex{
+.btnDetail{
+    position: absolute;
+    bottom: 120px;
+    left: 200px;
+    font-size: 15px;
+    width:160px;
+    height: 55px;
+    border-radius:30px;
     background-color: #1A2A3A;
-    border: 1px solid #A8E6CF;
-    color: #A8E6CF;
-    height: 25px;
-    letter-spacing: 1px;
-
-}
-
-.cardd{
-    width: 200px;
-    background-color:#384757;
-    height: 270px;
-    border-radius: 30px;
-    padding-left: 25px;
-    padding-bottom: 45px;
-}
-
-.descriptionOffer{
-    list-style-position: inside;
-}
-
-.price{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-li{
-    margin-bottom: 10px;
-}
-
-.btnChoose{
-    margin-top: 10px;
-    width: 180px;
-    height: 35px;
-    background-color: #1A2A3A;
-    border-radius: 10px;
-    border:1px solid #A8E6CF;
-    color: aliceblue;
-    font-weight: 600;
+    color:#80e7c1;
+    font-weight: 700;
+    border:1px solid #80e7c1;
     transition: 0.3s;
 }
 
-.btnChoose:hover{
-    background-color: #A8E6CF;
+.btnDetail:hover{
+    background-color: #80e7c1;
     color:#1A2A3A;
 }
 
-.container-metric{
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 150px;
-    width: 100%;
-    max-width: 1000px;
-    margin-left: 200px;
+
+.btnGet:hover{
+    background-color: #1A2A3A;
+    color: #80e7c1;
+    border:1px solid #80e7c1;
 }
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1A2A3A;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.backIndex {
+    margin: 25px 0 0 30px;
+    padding: 8px 18px;
+    background-color: #1A2A3A;
+    border: 1px solid #A8E6CF;
+    border-radius: 8px;
+    color: #A8E6CF;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.backIndex:hover {
+    background-color: #A8E6CF;
+    color: #1A2A3A;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.sectionOffer {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   MAIN CARD / CONTAINER
+========================= */
+
+.mainCard {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.titleGet {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titleGet h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.cardOffer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 35px;
+    color: aliceblue;
+}
+
+
+.cardd {
+    width: 350px;
+    min-height: 430px;
+    background-color: #384757;
+    padding: 35px 25px;
+    border-radius: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+
+
+.cardd:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.cardd h3 {
+    margin: 0 0 30px 0;
+
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    gap: 5px;
+
+    margin-bottom: 30px;
+}
+
+.price h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.price h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.descriptionOffer {
+    margin-top: 10px;
+}
+
+.descriptionOffer li {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+    list-style-position: inside;
+}
+
+.btnChoose {
+    margin-top: 20px;
+
+    width: 190px;
+    height: 45px;
+
+    background-color: #1A2A3A;
+
+    border: 1px solid #A8E6CF;
+    border-radius: 12px;
+
+    color: aliceblue;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btnChoose:hover {
+    background-color: #A8E6CF;
+    color: #1A2A3A;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1150px) {
+
+    .cardOffer {
+        gap: 20px;
+    }
+
+    .cardd {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .sectionOffer {
+        align-items: flex-start;
+    }
+
+    .cardOffer {
+        flex-wrap: wrap;
+    }
+
+    .cardd {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .mainCard {
+        padding: 25px 15px;
+    }
+
+    .titleGet h2 {
+        font-size: 26px;
+    }
+
+    .cardd {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .backIndex {
+        margin-left: 15px;
+    }
+}
+
 
 .card-metric {
     display: flex;
@@ -226,9 +391,9 @@ li{
 
 .btn-livingRoom{
     background-color: #80e7c1; 
-    color: #ffffff;
-    border: 1px solid #000000;
-    text-shadow: 0 3px 3px black;
+    color: #000000;
+    border: none;
+
     border-radius: 30px;
     padding: 10px 10px;
     
@@ -256,9 +421,10 @@ li{
     align-items: center;
     width: fit-content;
     margin-left: 30px;
-    background:#273543;
+    background:#3c4248;
     padding-right: 20px;
     padding-left: 15px;
+    border: 1px solid #80e7c1;
     border-radius: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -266,11 +432,11 @@ li{
 
 .fit{
     font-size: 25px;
-    color: #b8b1b1;
+    color: #ffeeee;
 }
 
 .span{
-    background-color:#f5f7fa;
+    background-color:#40464d;
     font-size: 40px;
     border-radius: 12px;
 }
@@ -331,6 +497,48 @@ li{
     border-radius: 15px;
     border:1px solid #80e7c1;
 }
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+input{
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    background: #555;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked+.slider{
+    background-color: #80e7c1;
+}
+
+input:checked+.slider::before{
+    transform: translateX(24px);
+}
+
+
 
 
 
