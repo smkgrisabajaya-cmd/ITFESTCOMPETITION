@@ -181,8 +181,9 @@ body {
 
 .cardOffer {
     display: flex;
+    align-items: center;
+    min-height: 100dvh;
     justify-content: center;
-    align-items: stretch;
     gap: 35px;
     color: aliceblue;
 }
