@@ -33,7 +33,6 @@ new Chart(chart, {
         scales: {
 
             x: {
-                // Tidak perlu callback %
             },
 
             y: {

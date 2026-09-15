@@ -104,22 +104,6 @@ a:hover{
     border:1px solid #80e7c1;
 }
 
-/* =========================
-   BODY
-========================= */
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: #1A2A3A;
-    font-family: Arial, sans-serif;
-}
-
-
-/* =========================
-   BACK BUTTON
-========================= */
-
 .backIndex {
     margin: 25px 0 0 30px;
     padding: 8px 18px;
@@ -138,34 +122,12 @@ body {
     color: #1A2A3A;
 }
 
-
-/* =========================
-   SECTION
-========================= */
-
-.sectionOffer {
-    min-height: calc(100vh - 70px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* =========================
-   MAIN CARD / CONTAINER
-========================= */
-
 .mainCard {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100px;
     padding: 40px;
     box-sizing: border-box;
 }
-
-
-/* =========================
-   TITLE
-========================= */
 
 .titleGet {
     color: aliceblue;
@@ -184,14 +146,14 @@ body {
     align-items: center;
     min-height: 100dvh;
     justify-content: center;
-    gap: 35px;
+    gap: 40px;
     color: aliceblue;
 }
 
-
 .cardd {
-    width: 350px;
-    min-height: 430px;
+    width: 320px;
+    min-height: 470px;
+    border: 1px solid #80e7c1;
     background-color: #384757;
     padding: 35px 25px;
     border-radius: 30px;
@@ -200,18 +162,12 @@ body {
     transition: 0.3s;
 }
 
-
-
 .cardd:hover {
-    transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .cardd h3 {
-    margin: 0 0 30px 0;
-
+    margin-bottom: 30px;
     font-size: 26px;
     font-weight: 600;
 }
@@ -220,9 +176,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: baseline;
-
     gap: 5px;
-
     margin-bottom: 30px;
 }
 
@@ -239,50 +193,45 @@ body {
 
 .descriptionOffer {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .descriptionOffer li {
     margin-bottom: 15px;
-
-    font-size: 18px;
-
+    font-size: 20px;
     list-style-position: inside;
 }
 
 .btnChoose {
     margin-top: 20px;
-
     width: 190px;
     height: 45px;
-
     background-color: #1A2A3A;
-
     border: 1px solid #A8E6CF;
     border-radius: 12px;
-
     color: aliceblue;
-
     font-size: 15px;
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .btnChoose:hover {
     background-color: #A8E6CF;
     color: #1A2A3A;
+    transform: scale(1.1);
+}
 
-    transform: translateY(-2px);
+.btn1{
+    margin-top: 65px;
 }
 
 @media (max-width: 1150px) {
-
     .cardOffer {
         gap: 20px;
     }
-
     .cardd {
         width: 300px;
     }
@@ -290,15 +239,12 @@ body {
 
 
 @media (max-width: 950px) {
-
     .sectionOffer {
         align-items: flex-start;
     }
-
     .cardOffer {
         flex-wrap: wrap;
     }
-
     .cardd {
         width: 350px;
     }
@@ -306,20 +252,16 @@ body {
 
 
 @media (max-width: 600px) {
-
     .mainCard {
         padding: 25px 15px;
     }
-
     .titleGet h2 {
         font-size: 26px;
     }
-
     .cardd {
         width: 100%;
         max-width: 350px;
     }
-
     .backIndex {
         margin-left: 15px;
     }
@@ -328,6 +270,7 @@ body {
 
 .card-metric {
     display: flex;
+    margin-left: 202px;
     gap: 80px;
     transform: translateX(-60px);
 }
@@ -340,13 +283,12 @@ body {
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
-    padding-right: 50px;
     border-radius: 15px;
     align-items: center;
     display: flex;
     font-size: 40px;
-    gap:20px;   
-    width: 100%;
+    gap:30px;   
+    width: 400px;
     box-sizing: border-box;                           
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
@@ -491,6 +433,7 @@ body {
 
 .average-container{
     max-width: 600px;
+    position: relative;
     width: 100%;
     background-color: #2b3d4d;
     padding-left:60px;
@@ -499,11 +442,20 @@ body {
     border:1px solid #80e7c1;
 }
 
+.chart-box {
+    margin-top: 80px;
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 130px;
+}
+
 .switch{
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 26px;
+    width: 80px;
+    height: 40px;
 }
 
 input{
@@ -522,10 +474,10 @@ input{
 .slider::before{
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 3px;
-    top: 3px;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
     background: white;
     border-radius: 50%;
     transition: 0.3s;
@@ -536,7 +488,7 @@ input:checked+.slider{
 }
 
 input:checked+.slider::before{
-    transform: translateX(24px);
+    transform: translateX(35px);
 }
 
 
