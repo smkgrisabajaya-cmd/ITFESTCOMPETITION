@@ -556,30 +556,30 @@ input:checked+.slider::before {
     border-radius: 10px;
 }
 
-.door-control{
+.btnDoor{
+    background-color: #248b65;
     color: #fafbfd;
-    background-color: green;
-    width: 100%;
-    width: fit-content;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    margin-top: 120px;
-    margin-left: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 70px;
     border: none;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    letter-spacing: 1px;
     font-weight: 600;
-    
+    margin-left: 50px;
+    transition: 0.4s;
 }
 
-.door-control:hover{
-    box-shadow: 0 3px 5px black;
-    transform: scale(1.1);
+.btnDoor:hover{
+    box-shadow: 0 3px 8px black;
 }
 
-.textDanger{}
+#textDanger {
+    color: white;
+}
 
+.access-status {
+    color: white;
+}
+
+#accessText {
+    color: #c8c8c8;
+}

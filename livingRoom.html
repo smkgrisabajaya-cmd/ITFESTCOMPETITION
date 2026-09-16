@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
@@ -31,18 +31,14 @@
                 <h3 class="title-lamp">Pintu Utama</h3>
             </div>
 
-            <div class="Des-text">
+            <button class="btnDoor" id="btnDoor">🔓 Buka Pintu</button>
 
-                <button id="btnDoor" class="door-control">
-                    Kontrol Pintu
-                </button>
+            <p id="textDanger"></p>
 
-                <div id="textDanger">
-                    Terkunci
-                </div>
-
-            </div>
-
+            <p class="access-status">
+                Status Akses:
+                <span id="accessText"></span>
+            </p>
             <script src="door.js"></script>
 </body>
 
