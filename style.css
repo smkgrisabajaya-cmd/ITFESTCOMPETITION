@@ -1,8 +1,11 @@
-:root{
-    --navy:#1A2A3A;
+:root {
+    --navy: #1A2A3A;
+    --bg: #14181a;
+    --panel-2: #1f2624;
+    --panel: #1b2120;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -10,16 +13,16 @@ body{
     background-color: #1A2A3A;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-.Logo{
-margin-left: 60px;
+.Logo {
+    margin-left: 60px;
 }
 
-.topNav{
+.topNav {
     list-style: none;
     display: flex;
     align-items: center;
@@ -29,21 +32,21 @@ margin-left: 60px;
     font-weight: 600;
 }
 
-a{
+a {
     text-decoration: none;
-    color:rgb(169, 166, 166);
+    color: rgb(169, 166, 166);
     transition: all 0.5s ease;
     border-radius: 5px;
     padding: 8px;
     font-size: 21px;
 }
 
-a:hover{
+a:hover {
     color: #A8E6CF;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
 }
 
-.hero{
+.hero {
     color: aliceblue;
     position: relative;
     margin-left: 140px;
@@ -52,56 +55,56 @@ a:hover{
     gap: 60px;
 }
 
-.title{
+.title {
     width: 800px;
-    font-size:68px;
+    font-size: 68px;
 }
 
-.description{
+.description {
     width: 700px;
     font-size: 28px;
     margin-top: -40px;
 }
 
-.btnGet{
+.btnGet {
     position: absolute;
     bottom: 120px;
     left: 5px;
     width: 160px;
     height: 55px;
-    border-radius:30px;
-    background-color:#80e7c1;
+    border-radius: 30px;
+    background-color: #80e7c1;
     border: none;
     font-size: 15px;
     color: black;
     transition: 0.3s;
 }
 
-.btnDetail{
+.btnDetail {
     position: absolute;
     bottom: 120px;
     left: 200px;
     font-size: 15px;
-    width:160px;
+    width: 160px;
     height: 55px;
-    border-radius:30px;
+    border-radius: 30px;
     background-color: #1A2A3A;
-    color:#80e7c1;
+    color: #80e7c1;
     font-weight: 700;
-    border:1px solid #80e7c1;
+    border: 1px solid #80e7c1;
     transition: 0.3s;
 }
 
-.btnDetail:hover{
+.btnDetail:hover {
     background-color: #80e7c1;
-    color:#1A2A3A;
+    color: #1A2A3A;
 }
 
 
-.btnGet:hover{
+.btnGet:hover {
     background-color: #1A2A3A;
     color: #80e7c1;
-    border:1px solid #80e7c1;
+    border: 1px solid #80e7c1;
 }
 
 .backIndex {
@@ -195,7 +198,7 @@ a:hover{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
 
 .descriptionOffer li {
@@ -224,7 +227,7 @@ a:hover{
     transform: scale(1.1);
 }
 
-.btn1{
+.btn1 {
     margin-top: 65px;
 }
 
@@ -232,6 +235,7 @@ a:hover{
     .cardOffer {
         gap: 20px;
     }
+
     .cardd {
         width: 300px;
     }
@@ -242,9 +246,11 @@ a:hover{
     .sectionOffer {
         align-items: flex-start;
     }
+
     .cardOffer {
         flex-wrap: wrap;
     }
+
     .cardd {
         width: 350px;
     }
@@ -255,13 +261,16 @@ a:hover{
     .mainCard {
         padding: 25px 15px;
     }
+
     .titleGet h2 {
         font-size: 26px;
     }
+
     .cardd {
         width: 100%;
         max-width: 350px;
     }
+
     .backIndex {
         margin-left: 15px;
     }
@@ -275,11 +284,11 @@ a:hover{
     transform: translateX(-60px);
 }
 
-.subcard-metric{
-    background: rgba(255, 255, 255, 0.05); 
-    backdrop-filter: blur(10px);          
+.subcard-metric {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid #80e7c1;                      
+    border: 1px solid #80e7c1;
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
@@ -287,9 +296,9 @@ a:hover{
     align-items: center;
     display: flex;
     font-size: 40px;
-    gap:30px;   
+    gap: 30px;
     width: 400px;
-    box-sizing: border-box;                           
+    box-sizing: border-box;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -317,7 +326,7 @@ a:hover{
     font-size: 20px;
 }
 
-.room1{
+.room1 {
     position: absolute;
     z-index: 3;
     top: 50%;
@@ -325,46 +334,45 @@ a:hover{
     border-radius: 30px;
 }
 
-.room2{
+.room2 {
     position: absolute;
     z-index: 3;
     top: 50%;
     right: 60%;
 }
 
-.btn-livingRoom{
-    background-color: #80e7c1; 
+.btn-livingRoom {
+    background-color: #80e7c1;
     color: #000000;
     border: none;
 
     border-radius: 30px;
     padding: 10px 10px;
-    
+
 }
 
-.title-LivingRoom{
-    font-size:40px;
+.title-LivingRoom {
+    font-size: 40px;
     color: aliceblue;
     font-weight: 600;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
-.sub-LivingRoom{
-    margin-top: 15px;
-    color: #8c949c;
-    font-size:18px;
-    margin-left: 8px;
+.sub-LivingRoom {
+    margin-top: 120px;
+    font-size: 30px;
+    color: #fafbfd;
+    margin-left: 55px;
     font-weight: 600;
 }
 
-.card-liv{
+.card-liv {
     display: flex;
-    gap: 15px;
     margin-top: 65px;
     align-items: center;
     width: fit-content;
     margin-left: 30px;
-    background:#3c4248;
+    background: #3c4248;
     padding-right: 20px;
     padding-left: 15px;
     border: 1px solid #80e7c1;
@@ -373,73 +381,73 @@ a:hover{
     padding-bottom: 15px;
 }
 
-.fit{
+.fit {
     font-size: 25px;
     color: #ffeeee;
 }
 
-.span{
-    background-color:#40464d;
+.span {
+    background-color: #40464d;
     font-size: 40px;
     border-radius: 12px;
 }
 
-.text-exp{
+.text-exp {
     margin-left: 140px;
 }
 
-.text-secondary{
+.text-secondary {
     color: #656f7d;
     font-size: 23px;
     font-weight: 600;
     width: 500px;
 }
 
-.text-secondary2{
+.text-secondary2 {
     color: #6d747b;
     font-size: 22px;
     display: inline-block;
     line-height: 30px;
 }
 
-.weight-Text{ 
+.weight-Text {
     font-size: 50px;
     color: #fafbfd;
 }
 
-.span-green{
-    color:#80e7c1 ;
+.span-green {
+    color: #80e7c1;
 }
 
-.container-flex{
+.container-flex {
     display: flex;
     margin-top: 70px;
     margin-left: 140px;
     gap: 60px;
 }
 
-.container-denah{
-    background-color:#2b3d4d;
+.container-denah {
+    background-color: #2b3d4d;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     border: 1px solid #80e7c1;
 }
 
-.homeLayout{
+.homeLayout {
     color: aliceblue;
     margin-left: 30px;
     font-size: 25px;
 }
 
-.average-container{
+.average-container {
     max-width: 600px;
     position: relative;
     width: 100%;
     background-color: #2b3d4d;
-    padding-left:60px;
+    padding-left: 60px;
     padding-right: 30px;
     border-radius: 15px;
-    border:1px solid #80e7c1;
+    border: 1px solid #80e7c1;
 }
 
 .chart-box {
@@ -451,18 +459,18 @@ a:hover{
     top: 130px;
 }
 
-.switch{
+.switch {
     position: relative;
     display: inline-block;
     width: 80px;
     height: 40px;
 }
 
-input{
+input {
     display: none;
 }
 
-.slider{
+.slider {
     position: absolute;
     inset: 0;
     background: #555;
@@ -471,7 +479,7 @@ input{
     transition: 0.3s;
 }
 
-.slider::before{
+.slider::before {
     content: "";
     position: absolute;
     width: 30px;
@@ -483,38 +491,95 @@ input{
     transition: 0.3s;
 }
 
-input:checked+.slider{
+
+input:checked+.slider {
     background-color: #80e7c1;
 }
 
-input:checked+.slider::before{
+input:checked+.slider::before {
     transform: translateX(35px);
+    background: #000000;
+}
+
+.cardD-main {
+    margin-top: 70px;
+}
+
+.control-room {
+    background:
+        radial-gradient(
+            circle at 70% 15%,
+            rgba(128, 231, 193, 0.05),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(128, 231, 193, 0.025),
+            transparent 35%
+        ),
+        #141b18;
+
+    color: white;
 }
 
 
+.icon-cardLamp {
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    background: radial-gradient(circle at top right, rgba(43, 217, 162, 0.25), transparent 30%), #15201d;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
 
+.lamp-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.text-secondary3{
+    color: rgba(247, 237, 237, 0.50);
+    margin-left: 60px;
+}
 
+.neon-icon {
+    margin-top: 10px;
+    width: 40px;
+    background-color: #386651;
+    height: 30px;
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
 
+.door-control{
+    color: #fafbfd;
+    background-color: green;
+    width: 100%;
+    width: fit-content;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-top: 120px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    font-weight: 600;
+    
+}
 
+.door-control:hover{
+    box-shadow: 0 3px 5px black;
+    transform: scale(1.1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.textDanger{}
 
