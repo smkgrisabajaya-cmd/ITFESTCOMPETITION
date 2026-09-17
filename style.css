@@ -459,50 +459,9 @@ a:hover {
     top: 130px;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-}
-
-input {
-    display: none;
-}
-
-.slider {
-    position: absolute;
-    inset: 0;
-    background: #555;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.slider::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 5px;
-    top: 5px;
-    background: white;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-
-input:checked+.slider {
-    background-color: #80e7c1;
-}
-
-input:checked+.slider::before {
-    transform: translateX(35px);
-    background: #000000;
-}
-
 .cardD-main {
     margin-top: 70px;
+    display: flex;
 }
 
 .control-room {
@@ -522,8 +481,7 @@ input:checked+.slider::before {
     color: white;
 }
 
-
-.icon-cardLamp {
+.icon-cardDevice{
     width: 250px;
     height: 300px;
     margin-left: 50px;
@@ -532,28 +490,16 @@ input:checked+.slider::before {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.lamp-header {
+.door-header {
+    margin-top: -10px;
+    margin-left: -10px;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .text-secondary3{
     color: rgba(247, 237, 237, 0.50);
     margin-left: 60px;
-}
-
-.neon-icon {
-    margin-top: 10px;
-    width: 40px;
-    background-color: #386651;
-    height: 30px;
-    margin-left: 8px;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 10px;
-    border-radius: 10px;
 }
 
 .btnDoor{
@@ -581,5 +527,96 @@ input:checked+.slider::before {
 }
 
 #accessText {
-    color: #c8c8c8;
+    color: rgb(255, 255, 255,0.70);
+    font-weight: 800;
 }
+
+.card-iconLamp{
+   margin-top: -10px;
+   margin-left: -10px;
+   display: flex;
+   align-items: center;
+}
+
+.lamp-control{
+    margin-top: -30px;
+    color:#7a938a;
+}
+
+.lamp-control h6{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.energyLamp{
+    display: flex;
+    margin-left: 6px;
+    margin-top: -70px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.energyLamp h3{
+    font-weight: 500;
+    margin-left: -5px;
+}
+
+.lamp-controlToggle{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+#lampStatus{
+    color: #fafbfd;
+    width: 60px;
+    font-weight: 600;
+}
+
+.switch{
+    position: relative;
+    width: 65px;
+    height: 30px;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    background-color: #555;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    background-color: #e3eaf3;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 5px;
+    transition: 0.3s;
+}
+
+input:checked+.slider{
+    background-color:#80e7c1;
+}
+
+input:checked+.slider::before{
+    transform: translateX(33px);
+    background-color: #000000;
+}
+
+
+
+
+
+

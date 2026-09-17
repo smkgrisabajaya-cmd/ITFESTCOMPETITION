@@ -20,15 +20,22 @@
     </div>
     <h3 class="text-secondary3">Ruang Tamu</h3>
 
+    <!-- Pintu -->
     <div class="cardD-main">
-        <div class="icon-cardLamp">
-            <div class="lamp-header">
-                <svg class="neon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="3" width="12" height="18" rx="2.5" stroke="#52e6aa" stroke-width="2.2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <circle cx="14.5" cy="12" r="1.3" fill="#52e6aa" />
+        <div class="icon-cardDevice">
+            <div class="door-header">
+                <svg width="100" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                        stroke-width="2" />
+
+                    <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Bingkai pintu -->
+                        <rect x="48" y="42" width="24" height="36" rx="2" />
+                        <!-- Gagang pintu -->
+                        <circle cx="66" cy="60" r="1.8" fill="#2dd4a8" stroke="none" />
+                    </g>
                 </svg>
-                <h3 class="title-lamp">Pintu Utama</h3>
+                <h3 class="title-door">Pintu Utama</h3>
             </div>
 
             <button class="btnDoor" id="btnDoor">🔓 Buka Pintu</button>
@@ -39,7 +46,71 @@
                 Status Akses:
                 <span id="accessText"></span>
             </p>
-            <script src="door.js"></script>
+        </div>
+
+
+        <!-- Lamp -->
+
+        <div class="icon-cardDevice">
+            <div class="card-iconLamp">
+                <svg width="100" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Kotak dalam teal/hijau dengan border -->
+                    <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                        stroke-width="2" />
+
+                    <!-- Ikon lampu  -->
+                    <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Kepala bulb -->
+                        <path d="M60 40 
+             a14 14 0 0 1 14 14 
+             c0 7 -4 10 -6 14 
+             a4 4 0 0 1 -4 3 
+             h-8 
+             a4 4 0 0 1 -4 -3 
+             c-2 -4 -6 -7 -6 -14 
+             a14 14 0 0 1 14 -14 
+             z" />
+                        <!-- Filamen dalam bulb -->
+                        <path d="M56 58 h8 M58 62 l2 4 l2 -4" stroke-width="1.8" />
+                        <!-- Dasar/ulir bulb -->
+                        <line x1="54" y1="74" x2="66" y2="74" />
+                        <line x1="55" y1="78" x2="65" y2="78" />
+                    </g>
+                </svg>
+
+                <h3>Lampu</h3>
+            </div>
+
+            <div class="lamp-control">
+                <h6>LED 9W-Ruang Tamu</h6>
+                <div class="energyLamp">
+                    <svg width="60" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                            stroke-width="2" />
+
+                        <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <!-- Ikon petir/bolt -->
+                            <path d="M64 38 L46 66 h10 l-4 16 20 -28 h-10 z" />
+                        </g>
+                    </svg>
+
+                    <h3>0.35kWH Hari Ini</h3>
+                </div>
+            </div>
+
+            <div class="lamp-controlToggle">
+                <span id="lampStatus"></span>
+
+                <label class="switch">
+                    <input type="checkbox" id="lampToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="door.js"></script>
+    <script src="lamp.js"></script>
 </body>
 
 </html>

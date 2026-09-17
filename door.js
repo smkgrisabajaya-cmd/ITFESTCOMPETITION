@@ -3,6 +3,7 @@ const textDanger = document.getElementById("textDanger");
 const accessText = document.getElementById("accessText");
 let doorLocked = true;
 
+
 btnDoor.addEventListener("click", () => {
     doorLocked = !doorLocked;
     if (doorLocked) {
@@ -20,3 +21,4 @@ btnDoor.addEventListener("click", () => {
     }
 
 });
+
