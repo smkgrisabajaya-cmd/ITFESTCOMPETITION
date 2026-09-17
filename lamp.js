@@ -1,32 +1,42 @@
-const TextStatus=document.getElementById("lampStatus");
-const LampToggle=document.getElementById("lampToggle");
-const LampState=localStorage.getItem("lampState");
+const lampTextStatus = document.getElementById("lampStatus");
+const lampToggle = document.getElementById("lampToggle");
 
-LampToggle.addEventListener("change",()=>{
-    
-    if(LampToggle.checked){
-        TextStatus.textContent="ON";
-        TextStatus.style.color="#238445";
-    }else{
-        TextStatus.textContent="OFF";
-        TextStatus.style.color="#fa3636";
-    }
-});
+// Ambil status lampu dari localStorage
+const lampState = localStorage.getItem("LampState");
 
-if(LampState==="ON"){
-    LampToggle.checked=true;
-    TextStatus.textContent="ON";
-}else{
-    LampToggle.checked="false";
-    TextStatus.textContent="OFF";
+// Tampilkan kondisi awal
+if (lampState === "ON") {
+
+    lampToggle.checked = true;
+    lampTextStatus.textContent = "ON";
+    lampTextStatus.style.color = "#238445";
+
+} else {
+
+    lampToggle.checked = false;
+    lampTextStatus.textContent = "OFF";
+    lampTextStatus.style.color = "#fa3636";
+
 }
 
-LampToggle.addEventListener("change",()=>{
-    if(LampToggle.checked){
-        TextStatus.textContent="ON";
-        localStorage.setItem("LampState,ON")
-    }else{
-        TextStatus.textContent="OFF";
-        localStorage.setItem("LampState,OFF")
+
+// Ketika toggle lampu diklik
+lampToggle.addEventListener("change", () => {
+
+    if (lampToggle.checked) {
+
+        lampTextStatus.textContent = "ON";
+        lampTextStatus.style.color = "#238445";
+
+        localStorage.setItem("LampState", "ON");
+
+    } else {
+
+        lampTextStatus.textContent = "OFF";
+        lampTextStatus.style.color = "#fa3636";
+
+        localStorage.setItem("LampState", "OFF");
+
     }
+
 });

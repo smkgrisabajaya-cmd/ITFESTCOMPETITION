@@ -482,8 +482,8 @@ a:hover {
 }
 
 .icon-cardDevice{
-    width: 250px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-left: 50px;
     background: radial-gradient(circle at top right, rgba(43, 217, 162, 0.25), transparent 30%), #15201d;
     border-radius: 10px;
@@ -507,7 +507,7 @@ a:hover {
     color: #fafbfd;
     border-radius: 8px;
     font-size: 20px;
-    margin-top: 70px;
+    margin-top: 180px;
     border: none;
     font-weight: 600;
     margin-left: 50px;
@@ -539,7 +539,7 @@ a:hover {
 }
 
 .lamp-control{
-    margin-top: -30px;
+    margin-top: 120px;
     color:#7a938a;
 }
 
@@ -566,8 +566,17 @@ a:hover {
     margin-left: 30px;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 180px;
 }
+
+.Ac-controlToggle{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    gap: 240px;
+}
+
 
 #lampStatus{
     color: #fafbfd;
@@ -614,6 +623,23 @@ input:checked+.slider::before{
     transform: translateX(33px);
     background-color: #000000;
 }
+
+.icon-cardDevice2{
+    margin-top: 40px; 
+}
+
+.temp-label{
+    font-weight: 800;
+}
+
+.temp-section{
+    color: #248b65;
+    margin-top: 90px;
+}
+
+
+
+
 
 
 
