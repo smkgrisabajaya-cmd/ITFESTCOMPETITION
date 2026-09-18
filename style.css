@@ -479,12 +479,15 @@ a:hover {
         #141b18;
 
     color: white;
+    background-repeat: no-repeat;
 }
+
 
 .icon-cardDevice{
     width: 400px;
-    height: 400px;
+    min-height: 400px;
     margin-left: 50px;
+    padding-bottom: 20px;
     background: radial-gradient(circle at top right, rgba(43, 217, 162, 0.25), transparent 30%), #15201d;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -615,6 +618,10 @@ a:hover {
     transition: 0.3s;
 }
 
+.des-suhu{
+    margin-left: 20px;
+}
+
 input:checked+.slider{
     background-color:#80e7c1;
 }
@@ -626,6 +633,15 @@ input:checked+.slider::before{
 
 .icon-cardDevice2{
     margin-top: 40px; 
+    min-height: 300px;
+    display: flex;
+    align-items:stretch;
+    position: absolute;
+}
+
+.TV-ttl{
+    display: flex;
+    align-items: center;
 }
 
 .temp-label{
@@ -634,8 +650,79 @@ input:checked+.slider::before{
 
 .temp-section{
     color: #248b65;
-    margin-top: 90px;
+    margin-top:90px;
 }
+
+.ac-ttl{
+    display: flex;
+}
+
+
+.source{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 160px;
+    margin-left: 10px;
+}
+
+.content-TV h4{
+    margin-left: 20px;
+}
+
+.controlTV{
+    position: relative;
+    height: 100%;
+}
+
+
+.controlTV h4{
+    font-weight: 600;
+    color:#7a938a;
+    letter-spacing: 1px;
+}
+
+.volume{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.tv-channel{
+    position: absolute;
+    right: 30px;
+    bottom: 160px;   
+}
+
+.fitur-TV{
+    display: flex;
+}
+
+.channel-dropdown {
+    width: 100%;
+    background: #0b1613;
+    border: 0.5px solid #1c2b25;
+    border-radius: 8px;
+    padding: 8px 14px;
+    color: #f2f5f3;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.channel-dropdown:focus {
+    outline: none;
+    border-color: #2dd4a8;
+}
+
+.controlToggleTV{
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+
+}
+
+
 
 
 
