@@ -1,29 +1,42 @@
-const tvTextStatus = document.getElementById("TVStatus");
-const tvToggle = document.getElementById("TVToggle");
+const TVTextStatus = document.getElementById("TVStatus");
+const TVToggle = document.getElementById("TVToggle");
 
-// Ambil status dari localStorage
-const tvState = localStorage.getItem("tvState");
+const TVState = localStorage.getItem("TVState");
+if (TVState === "ON") {
 
-// Tampilkan status awal
-if (tvState === "ON") {
-    tvToggle.checked = true;
-    tvTextStatus.textContent = "ON";
-    tvTextStatus.style.color = "#238445";
+    TVToggle.checked = true;
+    TVTextStatus.textContent = "ON";
+    TVTextStatus.style.color = "#238445";
+
 } else {
-    tvToggle.checked = false;
-    tvTextStatus.textContent = "OFF";
-    tvTextStatus.style.color = "#fa3636";
-}
 
-// Update saat toggle diklik
-tvToggle.addEventListener("change", () => {
-    if (tvToggle.checked) {
-        tvTextStatus.textContent = "ON";
-        tvTextStatus.style.color = "#238445";
-        localStorage.setItem("tvState", "ON");
+    TVToggle.checked = false;
+    TVTextStatus.textContent = "OFF";
+    TVTextStatus.style.color = "#fa3636";
+
+}
+TVToggle.addEventListener("change", () => {
+
+    if (TVToggle.checked) {
+
+        TVTextStatus.textContent = "ON";
+        TVTextStatus.style.color = "#238445";
+
+        localStorage.setItem("TVState", "ON");
+
     } else {
-        tvTextStatus.textContent = "OFF";
-        tvTextStatus.style.color = "#fa3636";
-        localStorage.setItem("tvState", "OFF");
+
+        TVTextStatus.textContent = "OFF";
+        TVTextStatus.style.color = "#fa3636";
+        localStorage.setItem("TVState", "OFF");
+
     }
+
+});
+
+const volValue=document.getElementById("volValue");
+const volSlider=document.getElementById("volSlider");
+
+volSlider.addEventListener("input",()=>{
+    volValue.textContent=volSlider.value;
 });

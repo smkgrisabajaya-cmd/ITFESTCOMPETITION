@@ -30,3 +30,10 @@ AcToggle.addEventListener("change", () => {
     }
 
 });
+
+const tempSlider=document.getElementById("tempSlider");
+const tempValue=document.getElementById("tempValue");
+
+tempSlider.addEventListener("input",()=>{
+    tempValue.textContent=tempSlider.value + "°C";
+});

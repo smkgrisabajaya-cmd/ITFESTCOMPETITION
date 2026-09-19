@@ -488,6 +488,7 @@ a:hover {
     min-height: 400px;
     margin-left: 50px;
     padding-bottom: 20px;
+    border: 1px solid #248b65;
     background: radial-gradient(circle at top right, rgba(43, 217, 162, 0.25), transparent 30%), #15201d;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -689,8 +690,8 @@ input:checked+.slider::before{
 
 .tv-channel{
     position: absolute;
-    right: 30px;
-    bottom: 160px;   
+    bottom: 80px;
+    right: 5px;   
 }
 
 .fitur-TV{
@@ -715,11 +716,37 @@ input:checked+.slider::before{
     border-color: #2dd4a8;
 }
 
-.controlToggleTV{
+.toggle-Control{
     position: absolute;
-    bottom: 2px;
-    display: flex;
+    bottom: 5px;
+}
 
+#TVStatus{
+    display: inline-block;
+    width: 40px;
+    font-weight: 600;
+}
+
+#acStatus{
+    width: 40px;
+    display: inline-block;
+}
+
+.livingRoomChart{
+    max-width: 700px;
+    width: 100%;
+    height: 420px;
+    background-color: #1c2b25;
+    margin-left: 50px;
+    border: 1px solid #2dd4a8;
+    border-radius: 10px;
+}
+
+.chart-Liv{
+    height: 350px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
