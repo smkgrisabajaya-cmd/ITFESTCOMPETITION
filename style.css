@@ -484,8 +484,8 @@ a:hover {
 
 
 .icon-cardDevice{
-    width: 400px;
     min-height: 400px;
+    width: 400px;
     margin-left: 50px;
     padding-bottom: 20px;
     border: 1px solid #248b65;
@@ -578,7 +578,7 @@ a:hover {
     display: flex;
     margin-top: 60px;
     align-items: center;
-    gap: 240px;
+    justify-content: space-between;
 }
 
 
@@ -633,11 +633,17 @@ input:checked+.slider::before{
 }
 
 .icon-cardDevice2{
-    margin-top: 40px; 
+    margin-top: 70px; 
     min-height: 300px;
     display: flex;
-    align-items:stretch;
     position: absolute;
+}
+
+.icon-cardDevice2 .icon-cardDevice{
+    max-width: 390px;
+    width:100%;
+    flex-shrink: 0;
+    margin-left: 50px;
 }
 
 .TV-ttl{
@@ -656,6 +662,11 @@ input:checked+.slider::before{
 
 .ac-ttl{
     display: flex;
+    align-items: center;
+}
+
+.ac-fixcard{
+    width: 300px;
 }
 
 
@@ -686,12 +697,27 @@ input:checked+.slider::before{
 .volume{
     margin-top: 50px;
     margin-left: 20px;
+    background-color: rgb(19, 51, 39,0.70);
+    border: 2px solid #2dd4a8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .tv-channel{
-    position: absolute;
-    bottom: 80px;
-    right: 5px;   
+    position:absolute;
+    bottom: 65px;
+    right: 5px;
+    font-weight: 600;
+    background-color:rgb(19, 51, 39,0.70);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border: 2px solid #2dd4a8;
+    border-radius: 15px;
+    
+
 }
 
 .fitur-TV{
@@ -745,8 +771,8 @@ input:checked+.slider::before{
 .chart-Liv{
     height: 350px;
     margin-top: 50px;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
 }
 
 
