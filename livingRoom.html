@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,19 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Kontrol Ruang Tamu</title>
 </head>
 
 <body class="control-room">
     <div class="header-lamp">
         <div class="sub-LivingRoom">Selamat Sore,User</div>
-
     </div>
     <h3 class="text-secondary3">Ruang Tamu</h3>
 
-    <!-- Pintu -->
+    <!-- Semua kartu berada dalam SATU grid (3 kolom sama lebar) -->
     <div class="cardD-main">
+
+        <!-- Pintu -->
         <div class="icon-cardDevice">
             <div class="door-header">
                 <svg width="100" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +49,11 @@
             </p>
         </div>
 
-
-        <!-- Lamp -->
-
+        <!-- Lampu -->
         <div class="icon-cardDevice">
             <div class="card-iconLamp">
                 <svg width="100" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                    <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
                         stroke-width="2" />
                     <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M60 40 
@@ -104,132 +103,135 @@
             </div>
         </div>
 
+        <!-- Grafik (kolom 3, tinggi 2 baris) -->
         <div class="livingRoomChart">
             <div class="chart-Liv">
                 <canvas id="chart-Liv"></canvas>
             </div>
         </div>
 
-    </div>
+        <div class="icon-cardDevice2">
 
-    <div class="icon-cardDevice2">
-        <!-- AC -->
-        <div class="icon-cardDevice">
-             <div class="ac-fixcard">
-            <div class="ac-ttl">
-                <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
-                        stroke-width="2" />
+            <!-- AC -->
+            <div class="icon-cardDevice">
+                <div class="ac-fixcard">
+                    <div class="ac-ttl">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                                stroke-width="2" />
 
-                    <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <!-- Badan unit AC -->
-                        <rect x="44" y="50" width="32" height="14" rx="4" />
-                        <!-- Lubang angin -->
-                        <line x1="48" y1="55" x2="72" y2="55" stroke-width="1.5" />
-                        <line x1="48" y1="59" x2="72" y2="59" stroke-width="1.5" />
-                        <!-- Hembusan angin -->
-                        <path d="M50 68 q3 4 0 8" stroke-width="1.8" />
-                        <path d="M60 68 q3 4 0 8" stroke-width="1.8" />
-                        <path d="M70 68 q3 4 0 8" stroke-width="1.8" />
-                    </g>
-                </svg>
-                <h3>AC</h3>
-            </div>
-
-            <div class="des-suhu">
-                <div class="temp-section">
-                    <p class="temp-label">Suhu :</p>
-                    <div class="temp-row">
-                        <span id="tempValue">24°C</span>
-                        <input type="range" id="tempSlider" min="16" max="30" value="24">
-                    </div>
-                </div>
-            </div>
-
-            <div class="Ac-controlToggle">
-                <span id="acStatus"></span>
-                <label class="switch">
-                    <input type="checkbox" id="acToggle">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-        </div>
-        <!-- TV -->
-        <div class="icon-cardDevice">
-            <div class="controlTV">
-                <div class="TV-ttl">
-                    <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
-                            stroke-width="2" />
-
-                        <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <!-- Layar TV -->
-                            <rect x="42" y="44" width="36" height="24" rx="3" />
-                            <!-- Kaki penyangga -->
-                            <line x1="52" y1="68" x2="48" y2="76" />
-                            <line x1="68" y1="68" x2="72" y2="76" />
-                            <!-- Dudukan bawah -->
-                            <line x1="48" y1="76" x2="72" y2="76" />
-                        </g>
-                    </svg>
-                    <h3>TV</h3>
-                </div>
-
-                <div class="content-TV">
-                    <h4 class="h4-p">Smart TV"-Ruang Tamu</h4>
-                    <div class="source">
-                        <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
-                            style="vertical-align:-2px; margin-right:-20px;">
-                            <g fill="none" stroke="#2dd4a8" stroke-width="6" stroke-linecap="round"
-                                stroke-linejoin="round" transform="rotate(-35 60 60)">
-                                <!-- Badan kepala colokan -->
-                                <rect x="42" y="42" width="36" height="36" rx="6" />
-                                <!-- Dua pin -->
-                                <line x1="54" y1="42" x2="54" y2="30" />
-                                <line x1="66" y1="42" x2="66" y2="30" />
+                            <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <!-- Badan unit AC -->
+                                <rect x="44" y="50" width="32" height="14" rx="4" />
+                                <!-- Lubang angin -->
+                                <line x1="48" y1="55" x2="72" y2="55" stroke-width="1.5" />
+                                <line x1="48" y1="59" x2="72" y2="59" stroke-width="1.5" />
+                                <!-- Hembusan angin -->
+                                <path d="M50 68 q3 4 0 8" stroke-width="1.8" />
+                                <path d="M60 68 q3 4 0 8" stroke-width="1.8" />
+                                <path d="M70 68 q3 4 0 8" stroke-width="1.8" />
                             </g>
                         </svg>
-                        <h4>Sumber:HDMI 1</h4>
+                        <h3>AC</h3>
                     </div>
 
-                    <div class="fitur-TV">
-
-                        <div class="volume">
-                            <p class="temp-label">Volume</p>
+                    <div class="des-suhu">
+                        <div class="temp-section">
+                            <p class="temp-label">Suhu :</p>
                             <div class="temp-row">
-                                <span id="volValue">24</span>
-                                <input type="range" id="volSlider" min="0" max="100" value="50">
+                                <span id="tempValue">24°C</span>
+                                <input type="range" id="tempSlider" min="16" max="30" value="24">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="tv-channel">
-                            <p class="tv-label">Channel</p>
-                            <select id="channelSelect" class="channel-dropdown">
-                                <option value="12-RCTI">12 - RCTI</option>
-                                <option value="6-SCTV">6 - SCTV</option>
-                                <option value="8-TransTV">8 - TransTV</option>
-                                <option value="10-MetroTV">10 - MetroTV</option>
-                            </select>
-                        </div>
-
-                        <div class="toggle-Control">
-                            <div class="lamp-controlToggle">
-                                <span id="TVStatus"></span>
-                                <label class="switch">
-                                    <input type="checkbox" id="TVToggle">
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
-
+                    <div class="Ac-controlToggle">
+                        <span id="acStatus"></span>
+                        <label class="switch">
+                            <input type="checkbox" id="acToggle">
+                            <span class="slider"></span>
+                        </label>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+            <!-- TV -->
+            <div class="icon-cardDevice">
+                <div class="controlTV">
+                    <div class="TV-ttl">
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="30" width="60" height="60" rx="16" fill="#0f2e28" stroke="#2dd4a8"
+                                stroke-width="2" />
+
+                            <g fill="none" stroke="#2dd4a8" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <!-- Layar TV -->
+                                <rect x="42" y="44" width="36" height="24" rx="3" />
+                                <!-- Kaki penyangga -->
+                                <line x1="52" y1="68" x2="48" y2="76" />
+                                <line x1="68" y1="68" x2="72" y2="76" />
+                                <!-- Dudukan bawah -->
+                                <line x1="48" y1="76" x2="72" y2="76" />
+                            </g>
+                        </svg>
+                        <h3>TV</h3>
+                    </div>
+
+                    <div class="content-TV">
+                        <h4 class="h4-p">Smart TV - Ruang Tamu</h4>
+                        <div class="source">
+                            <div class="imgtv">
+                            <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
+                                style="vertical-align:-2px; margin-right:-20px;">
+                                <g fill="none" stroke="#2dd4a8" stroke-width="6" stroke-linecap="round"
+                                    stroke-linejoin="round" transform="rotate(-35 60 60)">
+                                    <!-- Badan kepala colokan -->
+                                    <rect x="42" y="42" width="36" height="36" rx="6" />
+                                    <!-- Dua pin -->
+                                    <line x1="54" y1="42" x2="54" y2="30" />
+                                    <line x1="66" y1="42" x2="66" y2="30" />
+                                </g>
+                            </svg>
+                            </div>
+                            <h4>Sumber : HDMI 1</h4>
+                        </div>
+
+                        <div class="fitur-TV">
+
+                            <div class="volume">
+                                <p class="temp-label">Volume</p>
+                                <div class="temp-row">
+                                    <span id="volValue">24</span>
+                                    <input type="range" id="volSlider" min="0" max="100" value="50">
+                                </div>
+                            </div>
+
+                            <div class="tv-channel">
+                                <p class="tv-label">Channel</p>
+                                <select id="channelSelect" class="channel-dropdown">
+                                    <option value="12-RCTI">12 - RCTI</option>
+                                    <option value="6-SCTV">6 - SCTV</option>
+                                    <option value="8-TransTV">8 - TransTV</option>
+                                    <option value="10-MetroTV">10 - MetroTV</option>
+                                </select>
+                            </div>
+                            </div>
+
+                            <div class="toggle-Control">
+                                    <span id="TVStatus"></span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="TVToggle">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- penutup .cardD-main sekarang di sini -->
 
     <script src="door.js"></script>
     <script src="ac.js"></script>
